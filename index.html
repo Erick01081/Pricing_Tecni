@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing General</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-inner">
+          <img class="logo" src="./Logo (6).png" alt="Logo TECNIRECARGAS" />
+          <div>
+            <h1>Pricing General</h1>
+            <p>Calculadora de precio con 15% y 25% de ganancia</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="column">
+          <h2>VALOR CON IVA</h2>
+          <label for="valorConIva">Ingresa valor</label>
+          <div class="input-wrap">
+            <span>$</span>
+            <input id="valorConIva" type="number" min="0" step="100" value="0" />
+          </div>
+
+          <article class="result-card">
+            <p class="scenario">Escenario 15%</p>
+            <p class="big-value" id="conIvaTotal15">$0</p>
+            <p class="percent">15% de ganancia</p>
+            <p class="small-profit" id="conIvaProfit15">Ganancia: $0</p>
+          </article>
+
+          <article class="result-card">
+            <p class="scenario">Escenario 25%</p>
+            <p class="big-value" id="conIvaTotal25">$0</p>
+            <p class="percent">25% de ganancia</p>
+            <p class="small-profit" id="conIvaProfit25">Ganancia: $0</p>
+          </article>
+        </section>
+
+        <section class="column">
+          <h2>VALOR M&Aacute;S IVA</h2>
+          <label for="valorMasIva">Ingresa valor</label>
+          <div class="input-wrap">
+            <span>$</span>
+            <input id="valorMasIva" type="number" min="0" step="100" value="0" />
+          </div>
+          <p class="small-profit valor-con-iva-texto" id="valorMasIvaConIvaTexto">Valor con IVA (19%): $0</p>
+
+          <article class="result-card">
+            <p class="scenario">Escenario 15%</p>
+            <p class="big-value" id="masIvaTotal15">$0</p>
+            <p class="percent">15% de ganancia</p>
+            <p class="small-profit" id="masIvaProfit15">Ganancia: $0</p>
+          </article>
+
+          <article class="result-card">
+            <p class="scenario">Escenario 25%</p>
+            <p class="big-value" id="masIvaTotal25">$0</p>
+            <p class="percent">25% de ganancia</p>
+            <p class="small-profit" id="masIvaProfit25">Ganancia: $0</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

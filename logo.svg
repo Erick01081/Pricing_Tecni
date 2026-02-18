@@ -1,0 +1,13 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Pricing General</title>
+  <desc id="desc">Logo base para app de pricing general</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe600"/>
+      <stop offset="100%" stop-color="#fff275"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="200" height="200" rx="42" fill="url(#bg)" stroke="#2d3277" stroke-width="10"/>
+  <path d="M56 142V74H80C103 74 114 87 114 108C114 129 103 142 80 142H56ZM73 126H79C90 126 96 119 96 108C96 97 90 90 79 90H73V126Z" fill="#2d3277"/>
+  <path d="M123 142V74H155C173 74 183 84 183 98C183 108 177 114 167 117L183 142H163L151 121H140V142H123ZM140 106H152C159 106 164 103 164 97C164 91 159 89 152 89H140V106Z" fill="#2d3277"/>
+</svg>

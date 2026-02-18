@@ -1,0 +1,167 @@
+:root {
+  --brand-primary: #1a0073;
+  --brand-accent: #ffd900;
+  --brand-accent-2: #ff2f8f;
+  --brand-accent-3: #16a7ff;
+  --bg: #f5f7ff;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  background: linear-gradient(120deg, var(--brand-accent), var(--brand-accent-2), var(--brand-accent-3));
+  border-bottom: 3px solid var(--brand-primary);
+  padding: 1rem 1.25rem;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.logo {
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid rgba(26, 0, 115, 0.18);
+}
+
+h1 {
+  margin: 0;
+  color: var(--brand-primary);
+  font-size: 1.45rem;
+}
+
+.header p {
+  margin: 0.15rem 0 0;
+  color: #1e293b;
+  font-size: 0.92rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.column {
+  background: var(--panel);
+  border-radius: 14px;
+  border: 1px solid #d6def6;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(26, 0, 115, 0.08);
+}
+
+.column h2 {
+  margin: 0 0 0.7rem;
+  font-size: 0.85rem;
+  color: var(--brand-primary);
+  letter-spacing: 0.07em;
+}
+
+.column label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.86rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.input-wrap span {
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.input-wrap input {
+  width: 100%;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 9px;
+  padding: 0.68rem 0.75rem 0.68rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.result-card {
+  border: 1px solid #d6def6;
+  border-left: 5px solid var(--brand-primary);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: #f7f8ff;
+  margin-bottom: 0.65rem;
+}
+
+.result-card:last-child {
+  margin-bottom: 0;
+}
+
+.scenario {
+  margin: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.big-value {
+  margin: 0.2rem 0 0;
+  font-size: clamp(1.5rem, 3.3vw, 2.3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.percent {
+  margin: 0.1rem 0 0;
+  color: var(--brand-primary);
+  font-weight: 700;
+  font-size: 0.84rem;
+}
+
+.small-profit {
+  margin: 0.15rem 0 0;
+  color: #475569;
+  font-size: 0.79rem;
+}
+
+.valor-con-iva-texto {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
