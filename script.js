@@ -66,16 +66,16 @@ function recalcularPrecios() {
   const valorConIvaBase = obtenerNumeroSeguro(inputConIva ? inputConIva.value : "0");
   const valorMasIvaBase = obtenerNumeroSeguro(inputMasIva ? inputMasIva.value : "0");
 
-  const resultadoConIva15 = calcularConIva(valorConIvaBase, 15);
-  const resultadoConIva25 = calcularConIva(valorConIvaBase, 25);
-  const resultadoMasIva15 = calcularMasIva(valorMasIvaBase, 15);
-  const resultadoMasIva25 = calcularMasIva(valorMasIvaBase, 25);
+  const resultadoConIva18 = calcularConIva(valorConIvaBase, 18);
+  const resultadoConIva20 = calcularConIva(valorConIvaBase, 20);
+  const resultadoMasIva18 = calcularMasIva(valorMasIvaBase, 18);
+  const resultadoMasIva20 = calcularMasIva(valorMasIvaBase, 20);
   pintarValorConIvaDebajoInput(valorMasIvaBase);
 
-  pintarResultado("conIvaTotal15", "conIvaProfit15", resultadoConIva15.total, resultadoConIva15.ganancia);
-  pintarResultado("conIvaTotal25", "conIvaProfit25", resultadoConIva25.total, resultadoConIva25.ganancia);
-  pintarResultado("masIvaTotal15", "masIvaProfit15", resultadoMasIva15.total, resultadoMasIva15.ganancia);
-  pintarResultado("masIvaTotal25", "masIvaProfit25", resultadoMasIva25.total, resultadoMasIva25.ganancia);
+  pintarResultado("conIvaTotal18", "conIvaProfit18", resultadoConIva18.total, resultadoConIva18.ganancia);
+  pintarResultado("conIvaTotal20", "conIvaProfit20", resultadoConIva20.total, resultadoConIva20.ganancia);
+  pintarResultado("masIvaTotal18", "masIvaProfit18", resultadoMasIva18.total, resultadoMasIva18.ganancia);
+  pintarResultado("masIvaTotal20", "masIvaProfit20", resultadoMasIva20.total, resultadoMasIva20.ganancia);
 }
 
 function main() {
