@@ -159,9 +159,75 @@ h1 {
   color: var(--brand-primary);
 }
 
+.column-colores {
+  grid-column: 1 / -1;
+}
+
+.colores-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.color-group label {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--brand-primary);
+}
+
+.frase-colores-wrap {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f7f8ff;
+  border: 1px solid #d6def6;
+  border-left: 5px solid var(--brand-primary);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+
+.frase-colores {
+  margin: 0;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.btn-copiar {
+  background: var(--brand-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-copiar:hover {
+  background: #2d00c6;
+}
+
+.btn-copiar:active {
+  transform: scale(0.96);
+}
+
+.btn-copiar.copiado {
+  background: #16a34a;
+}
+
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
     padding: 1rem;
+  }
+
+  .colores-grid {
+    grid-template-columns: 1fr;
   }
 }
